@@ -1,0 +1,42 @@
+﻿<Window x:Class="hospiPlus.gestionMedicos"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:hospiPlus"
+        mc:Ignorable="d"
+        Title="gestionMedicos" Height="750" Width="500">
+    <Grid>
+        <Grid.Background>
+            <ImageBrush ImageSource="/fondo1hospital.jpg"/>
+        </Grid.Background>
+        <Label Content="GESTION DE MEDICOS" HorizontalAlignment="Center" Margin="0,10,0,0" VerticalAlignment="Top" Width="452" FontSize="40" FontFamily="Segoe UI Black" Background="#FF409D93"/>
+        <Label Content="" HorizontalAlignment="Center" Margin="0,130,0,0" VerticalAlignment="Top" Width="396" Height="225" Background="#FFBEE9DE" FontSize="14" FontFamily="Arial Rounded MT Bold"/>
+        <TextBox x:Name="txtBuscarMedico" HorizontalAlignment="Left" Margin="236,106,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="121" Height="19"/>
+        <Button x:Name="btnBuscarMedicoID" Content="BUSCAR" HorizontalAlignment="Left" Margin="376,105,0,0" VerticalAlignment="Top" Background="#FFDD96E6" Width="72" Click="btnBuscarMedicoID_Click"/>
+        <Label Content="Nombre:" HorizontalAlignment="Left" Margin="68,193,0,0" VerticalAlignment="Top" Width="91" FontSize="14" FontFamily="Arial Rounded MT Bold"/>
+        <Label Content="Apellido:" HorizontalAlignment="Left" Margin="68,233,0,0" VerticalAlignment="Top" Width="91" FontSize="14" FontFamily="Arial Rounded MT Bold"/>
+        <Label Content="MedicoID:" HorizontalAlignment="Left" Margin="68,149,0,0" VerticalAlignment="Top" Width="91" FontSize="14" FontFamily="Arial Rounded MT Bold"/>
+        <Label Content="Fecha de Nacimiento:" HorizontalAlignment="Left" Margin="68,280,0,0" VerticalAlignment="Top" Width="163" FontSize="14" FontFamily="Arial Rounded MT Bold"/>
+        <Label Content="" HorizontalAlignment="Center" Margin="0,360,0,0" VerticalAlignment="Top" Width="396" Height="251" Background="#FFB5EDC2" FontSize="14" FontFamily="Arial Rounded MT Bold"/>
+        <Label Content="Genero:" HorizontalAlignment="Left" Margin="69,381,0,0" VerticalAlignment="Top" Width="92" FontSize="14" FontFamily="Arial Rounded MT Bold"/>
+        <Label Content="Dirección:" HorizontalAlignment="Left" Margin="70,430,0,0" VerticalAlignment="Top" Width="91" FontSize="14" FontFamily="Arial Rounded MT Bold"/>
+        <Label Content="Especialidad:" HorizontalAlignment="Left" Margin="69,485,0,0" VerticalAlignment="Top" Width="122" FontSize="14" FontFamily="Arial Rounded MT Bold"/>
+        <Label Content="Teléfono:&#xA;" HorizontalAlignment="Left" Margin="66,521,0,0" VerticalAlignment="Top" Width="92" Height="32" FontSize="14" FontFamily="Arial Rounded MT Bold"/>
+        <Label Content="Email:" HorizontalAlignment="Left" Margin="70,558,0,0" VerticalAlignment="Top" Width="92" Height="32" FontSize="14" FontFamily="Arial Rounded MT Bold"/>
+        <TextBox x:Name="txtDireccion" HorizontalAlignment="Left" Margin="150,432,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="207" Height="40"/>
+        <TextBox x:Name="txtTelefono" HorizontalAlignment="Left" Margin="150,528,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="120"/>
+        <TextBox x:Name="txtEmail" HorizontalAlignment="Left" Margin="130,565,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="120"/>
+        <TextBox x:Name="txtMedicoID" HorizontalAlignment="Left" Margin="150,153,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="120"/>
+        <TextBox x:Name="txtNombre" HorizontalAlignment="Left" Margin="140,197,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="120"/>
+        <TextBox x:Name="txtApellido" HorizontalAlignment="Left" Margin="140,237,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="120"/>
+        <DatePicker x:Name="dtpFechaNacimiento" HorizontalAlignment="Left" Margin="231,281,0,0" VerticalAlignment="Top"/>
+        <ComboBox x:Name="cmbGenero" HorizontalAlignment="Left" Margin="140,385,0,0" VerticalAlignment="Top" Width="163"/>
+        <ComboBox x:Name="cmbEspecialidad" HorizontalAlignment="Left" Margin="176,489,0,0" VerticalAlignment="Top" Width="181"/>
+        <Button x:Name="btnGuardar" Content="GUARDAR" HorizontalAlignment="Left" Margin="24,628,0,0" VerticalAlignment="Top" Width="108" Height="50" FontFamily="Arial Rounded MT Bold" Background="#FF79F362" Click="btnGuardar_Click"/>
+        <Button x:Name="btnEliminar" Content="ELIMINAR" HorizontalAlignment="Left" Margin="188,628,0,0" VerticalAlignment="Top" Width="108" Height="50" FontFamily="Arial Rounded MT Bold" Background="#FFE92929" Click="btnEliminar_Click"/>
+        <Button x:Name="btnEditar" Content="EDITAR" HorizontalAlignment="Left" Margin="342,628,0,0" VerticalAlignment="Top" Width="106" Height="50" FontFamily="Arial Rounded MT Bold" Background="#FFE6A040" Click="btnEditar_Click"/>
+        <Button x:Name="btnVolverInicio" Content="Volver al Menu" HorizontalAlignment="Left" Margin="162,688,0,0" VerticalAlignment="Top" Width="172" Height="26" Background="#FF55D6CC" FontSize="14" FontFamily="Arial Rounded MT Bold" Click="btnVolverInicio_Click"/>
+
+    </Grid>
+</Window>

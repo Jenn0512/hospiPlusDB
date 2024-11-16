@@ -1,0 +1,77 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <OutputType>WinExe</OutputType>
+    <TargetFramework>net7.0-windows</TargetFramework>
+    <Nullable>enable</Nullable>
+    <UseWPF>true</UseWPF>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <None Remove="267d4e95b5fb34cefecc3fdcf72fa773.jpg" />
+    <None Remove="482edb8a4d291f8ec4687c161eb4ecf4.jpg" />
+    <None Remove="ab373bb35445472ef64130a8d3c64156.jpg" />
+    <None Remove="Cita.jpg" />
+    <None Remove="Consulta.jpg" />
+    <None Remove="d97bbb08017ac2309307f0822e63d082.jpg" />
+    <None Remove="Examenes.jpg" />
+    <None Remove="f2a365aac5069f64622626dc30d82969.jpg" />
+    <None Remove="fondo1hospital.jpg" />
+    <None Remove="fondoazul.jpg" />
+    <None Remove="fondohospital.jpg" />
+    <None Remove="RecetaMedica.jpg" />
+    <None Remove="Resources\2ae0a0cc3043eea65072fc5fafae05c9.jpg" />
+    <None Remove="Resources\51cb1e8ab7aa930322e2b941aa479f0e-removebg-preview %281%29.png" />
+    <None Remove="Resources\71601a19bb193f9121d0fecf20637c61-removebg-preview.png" />
+    <None Remove="Resources\72779b63d9b24ef1bd89a7f1cb371053-removebg-preview.png" />
+    <None Remove="Resources\d9b2ee25b9e2e99f937d155034d6165f-removebg-preview.png" />
+    <None Remove="Resources\fondohospital.jpg" />
+    <None Remove="Resources\th-removebg-preview %281%29.png" />
+    <None Remove="th-removebg-preview %281%29.png" />
+    <None Remove="th.jpeg" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <PackageReference Include="Microsoft.Data.SqlClient" Version="5.2.2" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <Resource Include="267d4e95b5fb34cefecc3fdcf72fa773.jpg" />
+    <Resource Include="482edb8a4d291f8ec4687c161eb4ecf4.jpg" />
+    <Resource Include="ab373bb35445472ef64130a8d3c64156.jpg" />
+    <Resource Include="Cita.jpg" />
+    <Resource Include="Consulta.jpg" />
+    <Resource Include="d97bbb08017ac2309307f0822e63d082.jpg" />
+    <Resource Include="Examenes.jpg" />
+    <Resource Include="f2a365aac5069f64622626dc30d82969.jpg" />
+    <Resource Include="fondo1hospital.jpg" />
+    <Resource Include="fondoazul.jpg" />
+    <Resource Include="fondohospital.jpg" />
+    <Resource Include="RecetaMedica.jpg" />
+    <Resource Include="Resources\2ae0a0cc3043eea65072fc5fafae05c9.jpg" />
+    <Resource Include="Resources\51cb1e8ab7aa930322e2b941aa479f0e-removebg-preview (1).png" />
+    <Resource Include="Resources\71601a19bb193f9121d0fecf20637c61-removebg-preview.png" />
+    <Resource Include="Resources\72779b63d9b24ef1bd89a7f1cb371053-removebg-preview.png" />
+    <Resource Include="Resources\d9b2ee25b9e2e99f937d155034d6165f-removebg-preview.png" />
+    <Resource Include="Resources\fondohospital.jpg" />
+    <Resource Include="Resources\th-removebg-preview (1).png" />
+    <Resource Include="th-removebg-preview (1).png" />
+    <Resource Include="th.jpeg" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <Compile Update="Properties\Resources.Designer.cs">
+      <DesignTime>True</DesignTime>
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Resources.resx</DependentUpon>
+    </Compile>
+  </ItemGroup>
+
+  <ItemGroup>
+    <EmbeddedResource Update="Properties\Resources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+    </EmbeddedResource>
+  </ItemGroup>
+
+</Project>

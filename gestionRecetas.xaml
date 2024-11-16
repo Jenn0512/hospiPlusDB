@@ -1,0 +1,48 @@
+﻿<Window x:Class="hospiPlus.gestionRecetas"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:hospiPlus"
+        mc:Ignorable="d"
+        Title="gestionRecetas" Height="700" Width="650">
+    <Grid>
+        <Grid.Background>
+            <ImageBrush ImageSource="/267d4e95b5fb34cefecc3fdcf72fa773.jpg"/>
+        </Grid.Background>
+        <Label Content="" HorizontalAlignment="Left" Margin="10,125,0,0" VerticalAlignment="Top" Width="299" Background="#FF5BB79C" Height="212"/>
+        <Label Content="NOMBRE:" HorizontalAlignment="Left" Margin="28,140,0,0" VerticalAlignment="Top" Width="144" FontSize="15" FontFamily="Britannic Bold"/>
+        <Label Content="DIRECCIÓN:" HorizontalAlignment="Left" Margin="28,276,0,0" VerticalAlignment="Top" Width="144" FontSize="15" FontFamily="Britannic Bold" RenderTransformOrigin="1.319,-4.424"/>
+        <Label Content="EDAD:" HorizontalAlignment="Left" Margin="28,230,0,0" VerticalAlignment="Top" Width="65" FontSize="15" FontFamily="Britannic Bold"/>
+        <Label Content="APELLIDO:" HorizontalAlignment="Left" Margin="28,190,0,0" VerticalAlignment="Top" Width="144" FontSize="15" FontFamily="Britannic Bold"/>
+        <TextBox x:Name="txtNombre" HorizontalAlignment="Left" Margin="104,134,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="177" Height="32"/>
+        <TextBox x:Name="txtApellido" HorizontalAlignment="Left" Margin="104,183,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="177" Height="34"/>
+        <TextBox x:Name="txtEdad" HorizontalAlignment="Left" Margin="104,226,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="49" Height="34"/>
+        <TextBox x:Name="txtDireccion" HorizontalAlignment="Left" Margin="116,272,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="165" Height="34"/>
+        <Label Content="" HorizontalAlignment="Left" Margin="9,352,0,0" VerticalAlignment="Top" Width="299" Background="#FF6DC35D" Height="212"/>
+        <Label Content="FECHA:" HorizontalAlignment="Left" Margin="31,506,0,0" VerticalAlignment="Top" Width="144" FontSize="15" FontFamily="Britannic Bold"/>
+        <Label Content="ESPECIALIDAD:" HorizontalAlignment="Left" Margin="31,460,0,0" VerticalAlignment="Top" Width="144" FontSize="15" FontFamily="Britannic Bold"/>
+        <Label Content="GENERO:" HorizontalAlignment="Left" Margin="31,367,0,0" VerticalAlignment="Top" Width="144" FontSize="15" FontFamily="Britannic Bold"/>
+        <Label Content="MEDICO:" HorizontalAlignment="Left" Margin="31,417,0,0" VerticalAlignment="Top" Width="144" FontSize="15" FontFamily="Britannic Bold"/>
+        <ComboBox x:Name="cmbGenero" HorizontalAlignment="Left" Margin="99,367,0,0" VerticalAlignment="Top" Width="120"/>
+        <ComboBox x:Name="cmbMedico" HorizontalAlignment="Left" Margin="99,417,0,0" VerticalAlignment="Top" Width="150"/>
+        <TextBox x:Name="txtEspecialidad" HorizontalAlignment="Left" Margin="142,453,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="148" Height="34"/>
+        <DatePicker HorizontalAlignment="Left" Margin="87,509,0,0" VerticalAlignment="Top"/>
+        <Label Content="RECETA MEDICA" HorizontalAlignment="Left" Margin="261,23,0,0" VerticalAlignment="Top" Width="368" Background="#FFFDFDFD" FontSize="30" FontFamily="Arial Black"/>
+        <TextBox x:Name="txtBuscar" HorizontalAlignment="Left" Margin="10,94,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="257" Height="22"/>
+        <Button x:Name="btnBuscar" Content="BUSCAR" HorizontalAlignment="Left" Margin="272,90,0,0" VerticalAlignment="Top" Width="85" Height="26" Background="#FF48E2D7" FontFamily="Bahnschrift SemiBold"/>
+        <Label Content="" HorizontalAlignment="Left" Margin="331,125,0,0" VerticalAlignment="Top" Width="298" Background="#FF98E5A2" Height="439"/>
+        <Label Content="DETALLES DE LA RECETA" HorizontalAlignment="Left" Margin="438,92,0,0" VerticalAlignment="Top" Width="191" FontSize="15" FontFamily="Britannic Bold"/>
+        <Label Content="NOMBRE DEL MEDICAMNETO:" HorizontalAlignment="Left" Margin="346,137,0,0" VerticalAlignment="Top" Width="223" FontSize="15" FontFamily="Britannic Bold"/>
+        <Label Content="DOSIS:" HorizontalAlignment="Left" Margin="346,225,0,0" VerticalAlignment="Top" Width="144" FontSize="15" FontFamily="Britannic Bold"/>
+        <Label Content="FRECUENCIA:" HorizontalAlignment="Left" Margin="346,310,0,0" VerticalAlignment="Top" Width="144" FontSize="15" FontFamily="Britannic Bold"/>
+        <Label Content="DURACIÓN:" HorizontalAlignment="Left" Margin="346,399,0,0" VerticalAlignment="Top" Width="144" FontSize="15" FontFamily="Britannic Bold"/>
+        <TextBox x:Name="txtNombreMedicamneto" HorizontalAlignment="Left" Margin="346,164,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="177" Height="32"/>
+        <ComboBox x:Name="cmbDosis" HorizontalAlignment="Left" Margin="414,226,0,0" VerticalAlignment="Top" Width="120"/>
+        <ComboBox x:Name="txtFrecuencia" HorizontalAlignment="Left" Margin="449,310,0,0" VerticalAlignment="Top" Width="120"/>
+        <ComboBox x:Name="cmbDuracion" HorizontalAlignment="Left" Margin="438,399,0,0" VerticalAlignment="Top" Width="120"/>
+        <Button x:Name="btnGuardar" Content="GUARDAR" HorizontalAlignment="Left" Margin="138,597,0,0" VerticalAlignment="Top" Width="143" Height="53" FontSize="16" FontFamily="Elephant" Background="#FF4ACE2B" Click="btnGuardar_Click"/>
+        <Button x:Name="btnCancelar" Content="CANCELAR" HorizontalAlignment="Left" Margin="380,597,0,0" VerticalAlignment="Top" Width="143" Height="53" FontSize="16" FontFamily="Elephant" Background="#FFF30606" Click="btnCancelar_Click"/>
+
+    </Grid>
+</Window>
